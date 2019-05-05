@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'Neue Einstellung';
+    font-weight: normal;
+    src: url("../fonts/NeueEinstellung-Regular.ttf") format("ttf"),
+    url("../fonts/NeueEinstellung-Regular.eot") format("eot"),
+    url("../fonts/NeueEinstellung-Regular.woff") format("woff"),
+    url("../fonts/NeueEinstellung-Regular.woff2") format("woff2"),
+    url("../fonts/NeueEinstellung-Regular.svg") format("svg");
+}
+@font-face {
+    font-family: 'Neue Einstellung';
+    font-weight: bold;
+    src: url("../fonts/NeueEinstellung-Bold.ttf") format("ttf"),
+    url("../fonts/NeueEinstellung-Bold.eot") format("eot"),
+    url("../fonts/NeueEinstellung-Bold.woff") format("woff"),
+    url("../fonts/NeueEinstellung-Bold.woff2") format("woff2"),
+    url("../fonts/NeueEinstellung-Bold.svg") format("svg");
+}
+
+body {
+    font-family: 'Neue Einstellung';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    }
+
+/* Navigation Bar*/
+nav{
+    z-index:9999;
+}
+
+.logo {
+    align-self:center;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    }
+
+.logo a {
+    float: center;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    }
+
+/* Hero*/
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-40%, -40%);
+    color: white;
+    }
+
+.hero-image {
+    grid-area:hero;
+    background-image: url("../images/oktagon/moselo-scene-1@3x.jpg");
+    margin-top:-80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: auto;
+}
+
+/* Banner */
+
+.banner {
+    text-align: center;
+    background-color: #6b358c;
+    padding: 20px;
+}
+
+.text-banner {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    color: rgba(255,255,255,0.75);
+}
+
+.orange{
+    color:#FFA730;
+    font-weight:bold;
+}
+
+.grey{
+    color:rgba(206, 206, 206, 0.75);;
+}
+
+.mobile{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+hr {
+    margin: 36px 0 32px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+/*Logo*/
+
+.moselo-logo {
+    width: 140px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.google-logo{
+    width: 121px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.apple-logo {
+    width: 121px;
+    height: 36px;
+    object-fit: contain;
+    margin-left: 8px;
+}
+
+/* Portfolio*/
+
+.portfolio {
+    margin-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.img-port-1{
+        border: 2px solid #E5D8EE;
+        background-color:#FDF9FF;
+        box-sizing: border-box;
+        border-radius:5px;
+}
+.img-port-2 {
+    border: 2px solid #F7E7E7;
+    background-color:#FFF9F9;
+    box-sizing: border-box;
+    border-radius:5px;
+}
+.img-port-3 {
+    grid-area: img-port-3;
+    float: left;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 2px solid #EFEFEF;
+    background-color:#FBFBFB;
+    box-sizing: border-box;
+    border-radius:5px;
+}
+.img-port-4 {
+    grid-area: img-port-4;
+    float: left;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 2px solid #CBE6E0;
+    background-color:#F7FFFD;
+    box-sizing: border-box;
+    border-radius:5px;
+}
+
+
+.port-text-1{
+    text-align: left;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+.port-text-2{
+    grid-area: port-text-2;
+    text-align: left;
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+
+.port-text-3{
+    grid-area: port-text-3;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+
+
+
+@media only screen and (max-width: 500px) and (min-width: 100px) {
+    .hero-image {
+        background-image: url("../images/oktagon/moselo-scene-1.jpg");
+        height: 400px;
+        margin-top:-80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: center;
+        max-width: 100%;
+    }
+    .hero-text{
+        display: none;
+    }
+
+    .image1{
+        background-image: url("../images/oktagon/moselo-scene-discover-2.png");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+
+    .image2{
+        background: url("../images/oktagon/moselo-scene-expertlist.png");
+        width:70%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+    .image3{
+        background: url("../images/oktagon/moselo-scene-chars-2.jpg");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        margin-right:15px;
+        float:left;
+    }
+
+    .image4{
+        background: url("../images/oktagon/moselo-scene-chat.jpg");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+
+    .img-portfolio {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "img-port-1"
+        "img-port-2"
+        "img-port-3"
+        "img-port-4";
+        float:center;
+       
+    }
+    .footer-text{
+        grid-area: footer-text;
+        text-align: center;
+    }
+    footer {
+        background-color: #09B291;
+        color:white;
+        height: auto;
+        padding: 15px; 
+        left: 0;
+        width: 100%;
+        position: absolute;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "footer-text"
+        "footer-images";
+        float:center;
+    }
+    .footer-images{
+        grid-area: footer-images;
+        text-align: center;
+        margin-top:20px;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+    .hero-image {
+        background-image: url("../images/oktagon/moselo-scene-1@2x.jpg");
+        margin-top:-80px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: center;
+        max-width: 100%;
+    }
+    .hero-text{
+        display: none;
+    }
+    .image1{
+        background-image: url("../images/oktagon/moselo-scene-discover-2@2x.png");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+    .image2{
+        background: url("../images/oktagon/moselo-scene-expertlist@2x.png");
+        width:70%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+    .image3{
+        background: url("../images/oktagon/moselo-scene-chars-2@2x.jpg");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        float:left;
+        margin-right:15px;
+    }
+
+    .image4{
+        background: url("../images/oktagon/moselo-scene-chat@2x.jpg");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+    .img-portfolio {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "img-port-1"
+        "img-port-2"
+        "img-port-3"
+        "img-port-4";
+       
+    }
+    .footer-text{
+        grid-area: footer-text;
+        text-align: center;
+        margin-left:20px;
+    }
+    footer {
+        background-color: #09B291;
+        color:white;
+        height: auto;
+        padding: 15px; 
+        left: 0;
+        width: 100%;
+        position: absolute;
+        display:grid;
+        text-align:center;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "footer-text"
+        "footer-images";
+        float:center;
+    }
+    .footer-images{
+        grid-area: footer-images;
+        text-align: center;
+        margin-top:20px;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .hero-image {
+        background-image: url("../images/oktagon/moselo-scene-1@3x.jpg");
+        height: 400px;
+        margin-top:-80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: center;
+        max-width: 100%;
+    }
+    .image1{
+        background-image: url("../images/oktagon/moselo-scene-discover-2@3x.png");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+    .image2{
+        background: url("../images/oktagon/moselo-scene-expertlist@3x.png");
+        width:70%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+    .image3{
+        background: url("../images/oktagon/moselo-scene-chars-2@3x.jpg");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        float:left;
+        margin-right:15px;
+    }
+
+    .image4{
+        background: url("../images/oktagon/moselo-scene-chat@3x.jpg");
+        width:50%;
+        height:350px;
+        background-size:cover;
+        float:right;
+    }
+    .mobile{
+        display: none;
+    }
+    hr{
+        display:none;
+    }
+      .img-portfolio {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "img-port-1 img-port-2"
+        "img-port-3 img-port-4";
+        float: center;
+    }
+    .footer-text{
+        grid-area: footer-text;
+        text-align: left;
+        margin-left:20px;
+    }
+    footer {
+        background-color: #09B291;
+        color:white;
+        height: auto;
+        padding: 15px; 
+        left: 0;
+        width: 100%;
+        position: absolute;
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        "footer-text footer-text footer-images";
+        float:center;
+    }
+    .footer-images{
+        grid-area: footer-images;
+        text-align: center;
+        margin-right:20px;
+    }
+}
+
+

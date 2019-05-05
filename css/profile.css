@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'Neue Einstellung';
+    font-weight: normal;
+    src: url("../fonts/NeueEinstellung-Regular.ttf") format("ttf"),
+    url("../fonts/NeueEinstellung-Regular.eot") format("eot"),
+    url("../fonts/NeueEinstellung-Regular.woff") format("woff"),
+    url("../fonts/NeueEinstellung-Regular.woff2") format("woff2"),
+    url("../fonts/NeueEinstellung-Regular.svg") format("svg");
+}
+
+@font-face {
+    font-family: 'Neue Einstellung';
+    font-weight: bold;
+    src: url("../fonts/NeueEinstellung-Bold.ttf") format("ttf"),
+    url("../fonts/NeueEinstellung-Bold.eot") format("eot"),
+    url("../fonts/NeueEinstellung-Bold.woff") format("woff"),
+    url("../fonts/NeueEinstellung-Bold.woff2") format("woff2"),
+    url("../fonts/NeueEinstellung-Bold.svg") format("svg");
+}
+
+body{
+    overflow: auto;
+    margin: 0;
+}
+
+.containter{
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.part-container{
+    display: inline-block;
+    width: 100%;
+}
+
+.top.part-container {
+    margin: 30px 0;
+}
+
+.contain {
+    text-align: center;
+}
+
+.moselo {
+    float: left;
+    margin-left: 7%;
+    /*width: 140px;*/
+    /*height: 36px;*/
+}
+
+.moselo-logo {
+    width: 140px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.store {
+    float: right;
+    margin-right: 7%;
+}
+
+.google-logo{
+    width: 121px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.apple-logo {
+    width: 121px;
+    height: 36px;
+    object-fit: contain;
+    margin-left: 8px;
+}
+
+.banner {
+    display: table;
+    text-align: center;
+    background-color: #6b358c;
+    padding: 14px;
+}
+
+.text-banner {
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    color: rgba(255,255,255,0.75);
+}
+.enter {
+    display: none;
+}
+
+a{
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.main {
+    width: 480px;
+    display: inline-block;
+}
+
+.account {
+    display: inline-block;
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 28px;
+}
+
+.photo {
+    width: 33.33%;
+    height: 100px;
+    float: left;
+}
+
+.relative {position: relative;width: 100px;height: 100px;margin-left: -50px;left: 50%;}
+
+.absolute {
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    width: 100%;
+    text-align: right;
+}
+
+.photo-expert {
+    border: 6px solid #fff;
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+.icon-category {
+    object-fit: cover;
+    width: 30%;
+    height: 30%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+.profile {
+    line-height: 30px;
+    margin-top: 3%;
+    float: left;
+    width: 60%;
+}
+
+.name-expert {
+    font-family: 'Neue Einstellung';
+    font-size: 24px;
+    font-weight: bold;
+    /*line-height: 110%;*/
+    letter-spacing: -0.2pt;
+    text-align: left;
+    color: #222222;
+}
+
+.category {
+    font-family: 'Neue Einstellung';
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #8757a2;
+    margin: 4px 0 -4px 0;
+}
+
+.location {
+    font-family: 'Neue Einstellung';
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #bbbbbb;
+}
+
+i.fa.fa-map-marker {
+    margin-right: 3px;
+}
+
+.portfolio {
+    margin-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+}
+
+.img-portfolio {
+    float: left;
+    width: 33.33%;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.img-portfolio:after {
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+}
+
+.img-port {
+    float: left;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid #FFF;
+}
+
+.info {
+    display: inline-block;
+    width: 100%;
+}
+
+hr {
+    margin: 36px 0 32px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.text {
+    float: left;
+    width: 65%;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.text-black {
+    font-family: 'Neue Einstellung';
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    margin-bottom: 4px;
+    color: #222222;
+}
+
+.text-code {
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #aaaaaa;
+}
+
+.qrcode {
+    float: right;
+    background-color: grey;
+}
+
+.button{
+    display: none;
+}
+
+.qrcode-image{
+    border: 1px solid #DDD;
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .account {
+    }
+    .top.part-container {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .top.part-container {
+        background-color: white;
+        margin: 0;
+        height: 60px;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .photo{
+        z-index: 50;
+    }
+
+    .moselo {
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+
+    .text-banner {
+        font-size: 12px;
+        text-align: left;
+        margin-right: 5%;
+    }
+
+    img.moselo-logo {
+        width: 109px;
+        height: 28px;
+        object-fit: contain;
+    }
+
+    .enter {
+        display: block;
+        height: 0;
+    }
+
+    .store {
+        display: none;
+    }
+
+    .banner.part-container {
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .account{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: -12px;
+    }
+
+    .photo-expert {
+        width: 64px;
+        height: 64px;
+        border-width: 4px;
+    }
+
+    .relative {
+        width: 72px;
+        height: 72px;
+        margin-left: -36px;
+    }
+
+    .profile {
+        margin-top: 5px;
+        line-height: 22px;
+        width: 66%;
+    }
+
+    .name-expert {
+        font-size: 18px;
+    }
+
+    .category {
+        font-size: 12px;
+        margin-top: 1px;
+    }
+
+    .location {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .portfolio {
+        margin-bottom: 140px;
+    }
+
+    .img-port {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .button {
+        background-color: white;
+        /*margin-top: 5px;*/
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 16px 10px 16px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .center-button {
+        font-family: 'Neue Einstellung';
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+    }
+
+    .btn-discuss {
+        height: 44px;
+        border-radius: 6px;
+        background-image: linear-gradient(to top, #17b293, #2eccad);
+        border: solid 1px #17b293;
+        margin-bottom: 8px;
+    }
+
+    .txt-discuss {
+        margin: 15px;
+        color: #fefefe;
+    }
+
+    .download {
+        height: 44px;
+        border-radius: 6px;
+        background-color: #FFF;
+        border: solid 1px #2eccad;
+    }
+
+    .txt-download {
+        margin: 15px;
+        color: #2eccad;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .img-port {
+        width: 106px;
+        height: 106px;
+    }
+}
